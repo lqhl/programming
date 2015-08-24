@@ -25,4 +25,4 @@ int main() {
             cout << fixed << volume << endl;
         }
     }
-};
+}
