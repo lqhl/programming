@@ -4,7 +4,7 @@
 
 Problem list:
 
-*   Google String (`gString.cpp)
+*   Google String (`gString.cpp`)
 *   gCube
 *   gCampus
 *   gSnake: ac after the contest
