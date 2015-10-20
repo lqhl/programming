@@ -1,3 +1,10 @@
+/*
+ * Contest: Google APAC 2016 University Graduates Test - Round A
+ * Problem: gSnake
+ * Author: Qin Liu
+ *
+ * Tag: simulation
+ */
 #include <iostream>
 #include <vector>
 #include <deque>

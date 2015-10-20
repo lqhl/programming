@@ -1,3 +1,10 @@
+/*
+ * Contest: Google APAC 2016 University Graduates Test - Round A
+ * Problem: gCampus
+ * Author: Qin Liu
+ *
+ * Tag: graph
+ */
 #include <iostream>
 #include <vector>
 #include <string>

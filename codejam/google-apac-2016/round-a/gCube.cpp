@@ -1,3 +1,10 @@
+/*
+ * Contest: Google APAC 2016 University Graduates Test - Round A
+ * Problem: gCube
+ * Author: Qin Liu
+ *
+ * Tag: math
+ */
 #include <iostream>
 #include <math.h>
 
