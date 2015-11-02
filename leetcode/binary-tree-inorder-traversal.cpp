@@ -1,6 +1,7 @@
 #include <vector>
 #include <stack>
 #include <cstdlib>
+#include <utility>
 
 using namespace std;
 
@@ -12,6 +13,28 @@ struct TreeNode {
 };
 
 class Solution {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        stack<TreeNode*> s;
+        vector<int> results;
+        TreeNode* cur = root;
+        while (true) {
+            if (cur != nullptr) {
+                s.push(cur);
+                cur = cur->left;
+            } else if (!s.empty()) {
+                cur = s.top();
+                s.pop();
+                results.push_back(cur->val);
+                cur = cur->right;
+            } else
+                break;
+        }
+        return results;
+    }
+};
+
+class Solution2 {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
         stack<pair<TreeNode*, bool>> s;
