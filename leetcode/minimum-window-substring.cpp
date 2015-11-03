@@ -1,7 +1,4 @@
-#include <vector>
-#include <string>
-
-using namespace std;
+#include "util.hpp"
 
 class Solution {
 public:

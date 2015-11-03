@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "util.hpp"
 
 inline int max(int a, int b) {
     return a >= b ? a : b;

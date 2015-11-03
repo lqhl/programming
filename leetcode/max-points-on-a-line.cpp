@@ -1,6 +1,4 @@
-#include <vector>
-#include <map>
-using namespace std;
+#include "util.hpp"
 
 /*
  * Definition for a point.

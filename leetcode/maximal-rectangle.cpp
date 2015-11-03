@@ -1,3 +1,5 @@
+#include "util.hpp"
+
 class Solution {
 public:
     int maximalRectangle(vector<vector<char>>& matrix) {

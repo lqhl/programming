@@ -1,9 +1,4 @@
-#include <vector>
-#include <queue>
-#include <functional>
-#include <iostream>
-
-using namespace std;
+#include "util.hpp"
 
 class MedianFinder {
 private:

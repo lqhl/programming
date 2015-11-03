@@ -1,7 +1,4 @@
-#include <string>
-#include <stack>
-
-using namespace std;
+#include "util.hpp"
 
 class Solution {
 public:

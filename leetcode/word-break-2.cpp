@@ -1,9 +1,4 @@
-#include <vector>
-#include <unordered_set>
-#include <string>
-#include <iostream>
-
-using namespace std;
+#include "util.hpp"
 
 class Solution {
 public:

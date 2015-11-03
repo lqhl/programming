@@ -1,9 +1,4 @@
-#include <vector>
-#include <map>
-#include <cassert>
-#include <iostream>
-
-using namespace std;
+#include "util.hpp"
 
 class Solution {
 private:

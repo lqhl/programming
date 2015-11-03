@@ -1,9 +1,4 @@
-#include <vector>
-#include <stack>
-#include <cstdlib>
-#include <utility>
-
-using namespace std;
+#include "util.hpp"
 
 struct TreeNode {
     int val;

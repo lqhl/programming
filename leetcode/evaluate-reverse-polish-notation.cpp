@@ -1,10 +1,4 @@
-#include <stack>
-#include <vector>
-#include <string>
-#include <sstream>
-#include <iostream>
-
-using namespace std;
+#include "util.hpp"
 
 class Solution {
 public:

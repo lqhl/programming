@@ -1,7 +1,4 @@
-#include <deque>
-#include <unordered_map>
-
-using namespace std;
+#include "util.hpp"
 
 class LRUCache{
 private:
@@ -11,7 +8,7 @@ private:
     deque<int> q;
 public:
     LRUCache(int capacity) : c(capacity) { }
-    
+
     int get(int key) {
         auto it = cache.find(key);
         if (it == cache.end())
@@ -22,7 +19,7 @@ public:
             return it->second;
         }
     }
-    
+
     void set(int key, int value) {
         auto it = cache.find(key);
         if (it == cache.end()) {

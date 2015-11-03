@@ -1,7 +1,4 @@
-#include <vector>
-#include <queue>
-
-using namespace std;
+#include "util.hpp"
 
 struct ListNode {
     int val;

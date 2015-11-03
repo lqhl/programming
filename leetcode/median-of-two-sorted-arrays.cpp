@@ -1,7 +1,4 @@
-#include<algorithm>
-#include<vector>
-
-using namespace std;
+#include "util.hpp"
 
 class Solution {
 private:
@@ -9,7 +6,7 @@ private:
         if (n == 0) return b[k-1];
         if (m == 0) return a[k-1];
         if (k == 1) return min(a[0], b[0]);
-        
+
         if (a[n/2] <= b[m/2]) {
             if (n/2 + 1 + m/2 >= k)
                 return find(a, b, n, m/2, k);

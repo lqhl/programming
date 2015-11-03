@@ -1,7 +1,4 @@
-#include <vector>
-#include <string>
-
-using namespace std;
+#include "util.hpp"
 
 class Solution {
 public:
@@ -12,7 +9,7 @@ public:
             return s2 == s3;
         if (s2.empty())
             return s1 == s3;
-        
+
         int n = s1.length(), m = s2.length();
         vector<vector<bool>> dp(n+1, vector<bool>(m+1, false));
         dp[0][0] = true;

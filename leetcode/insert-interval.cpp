@@ -1,6 +1,4 @@
-#include <vector>
-
-using namespace std;
+#include "util.hpp"
 
 struct Interval {
     int start;
@@ -8,7 +6,7 @@ struct Interval {
     Interval() : start(0), end(0) {}
     Interval(int s, int e) : start(s), end(e) {}
 };
- 
+
 class Solution {
 public:
     vector<Interval> insert(vector<Interval>& intervals, Interval newInterval) {

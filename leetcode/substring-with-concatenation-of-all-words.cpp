@@ -1,8 +1,4 @@
-#include <vector>
-#include <string>
-#include <unordered_map>
-
-using namespace std;
+#include "util.hpp"
 
 class Solution {
 public:
@@ -12,7 +8,7 @@ public:
         unordered_map<string, int> need;
         for (auto& w : words) need[w]++;
         unordered_map<string, int> found;
-        
+
         for (int k = 0; k < len; k++) {
             int missed = need.size();
             int i = k, j = k;
@@ -49,7 +45,7 @@ public:
                 }
             }
         }
-        
+
         return results;
     }
 };

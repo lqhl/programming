@@ -1,8 +1,4 @@
-#include <vector>
-#include <string>
-#include <unordered_set>
-
-using namespace std;
+#include "util.hpp"
 
 class Solution {
 private:
@@ -14,10 +10,10 @@ private:
                 children[i] = nullptr;
         }
     };
-    
+
     int n, m;
     unordered_set<string> result;
-    
+
     void add(Trie* cur, string w) {
         for (int i = 0; i < w.length(); i++) {
             if (cur->children[w[i]-'a'] == nullptr)
@@ -26,7 +22,7 @@ private:
         }
         cur->count++;
     }
-    
+
     void dfs(vector<vector<char>>& board, int i, int j, Trie* cur, string res) {
         if (i < 0 || i >= n || j < 0 || j >= m) return;
         if (board[i][j] == ' ') return;
@@ -49,10 +45,10 @@ public:
         Trie* root = new Trie();
         for (auto& w : words)
             add(root, w);
-        
+
         n = board.size();
         m = n > 0 ? board[0].size() : 0;
-        
+
         for (int i = 0; i < n; i++)
             for (int j = 0; j < m; j++) {
                 dfs(board, i, j, root, "");
